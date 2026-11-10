@@ -1,0 +1,14 @@
+# Generated per-machine by scripts/export-from-xcode.sh
+export-info.json
+skills/accessibility-*
+skills/adopt-c-bounds-safety
+skills/app-*
+skills/audit-xcode-security-settings
+skills/building-document-based-swiftui-applications
+skills/device-interaction
+skills/modernize-tests
+skills/swiftui-*
+skills/translation
+skills/translation-coordinator
+
+.DS_Store
