@@ -29,15 +29,15 @@
     "shortDescription": "Build, test, and run Xcode schemes; SwiftUI previews; simulators; build logs; Apple docs",
     "longDescription": "Gives Kimi Code direct access to Xcode through the MCP server built into Xcode itself (xcrun mcpbridge) — the same machinery behind Apple's official Claude Code plugin (xcode@claude-plugins-official).\n\nCapabilities:\n- Build, run, and test schemes (BuildProject, RunProject, RunAllTests, RunSomeTests)\n- Render SwiftUI previews (RenderPreview)\n- Drive simulators and devices: boot, install, launch, synthesize input (DeviceInteraction*)\n- Read build logs, console output, crash and diagnostics logs (GetBuildLog, GetConsoleOutput, Get*IssueLogs)\n- Browse and edit the project: list schemes/targets/workspaces, read/write files inside the project, glob/grep/ls/mv/rm (Xcode*)\n- Manage build settings, entitlements, Info.plist, compiler flags\n- Work with String Catalogs (localization)\n- Search Apple developer documentation (DocumentationSearch)\n\nPrerequisites: macOS with Xcode installed; open the project/workspace in Xcode before asking the agent to work with it; allow external agents in Xcode Settings → Intelligence (Xcode shows an alert when an agent connects). After updating Xcode, re-run scripts/export-from-xcode.sh and reinstall the plugin to refresh the bundled skills.",
     "developerName": "kimi-xcode-plugin / Apple Inc.",
-    "hostKind": "local",
-    "platforms": [
-      "macos"
-    ]
+    "hostKind": "local"
   },
   "mcpServers": {
     "xcode": {
       "command": "./bin/xcode-mcp.sh",
       "cwd": "./"
     }
-  }
+  },
+  "platforms": [
+    "macos"
+  ]
 }
